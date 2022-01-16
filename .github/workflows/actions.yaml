@@ -57,8 +57,8 @@ jobs:
      - name: Update function
        run: |
            aws lambda update-function-code \
-           --functions-name GHActions-lambda \
-           --s3-bucket github-actions-bucket-456677788 \
-           --s3-key ${{github.sha}}.zip \
-           --publish
+             --functions-name GHActions-lambda \
+             --s3-bucket github-actions-bucket-456677788 \
+             --s3-key ${{github.sha}}.zip \
+             --publish
      
